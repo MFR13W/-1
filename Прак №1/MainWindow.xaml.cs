@@ -83,7 +83,7 @@ namespace Прак__1
             save.FilterIndex = 2;
             save.Title = "Сохранение таблицы";
 
-            if (save.ShowDialog() == true) // Получаем путь к фа
+            if (save.ShowDialog() == true) // Получаем путь к файлу
             {
                 StreamWriter file = new StreamWriter(save.FileName);
                 file.WriteLine(Ks.Text);
