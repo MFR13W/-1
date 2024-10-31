@@ -1,0 +1,34 @@
+﻿<Window x:Class="Прак__1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Прак__1"
+        mc:Ignorable="d"
+        Title="Lab_1" Height="450" Width="800" Icon="/5449368537555657186.jpg">
+    <Grid>
+        <StackPanel Margin="6,23,-15,320">
+            <TextBlock x:Name="GNH" FontWeight="Bold" Text="Сгенерированные числа:"/>
+            <TextBlock x:Name="GN" Text=""/>
+            <TextBlock x:Name="TSH" FontWeight="Bold" Text="Сумма:"/>
+            <TextBlock x:Name="TS" Text=""/>
+            <TextBlock x:Name="NCH" FontWeight="Bold" Text="Количество чисел:"/>
+            <TextBlock x:Name="NC" Text=""/>
+        </StackPanel>
+        <Menu VerticalAlignment="Top" Margin="0,2,0,0" Grid.ColumnSpan="11">
+            <MenuItem x:Name="Файл" Header="Файл" Height="21" Width="43">
+                <MenuItem Header="Открыть" Click = "Open_MenuItem_Click"/>
+                <MenuItem Header="Сохранить" Click = "Save_MenuItem_Click"/>
+                <Separator/>
+                <MenuItem Header="Выход"/>
+            </MenuItem>
+            <MenuItem Header="Справка" Click="Spravka_MenuItem_Click"/>
+        </Menu>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="666,275,0,0" VerticalAlignment="Top" Click="Button_Click" Height="33" Width="103"/>
+        <Button Content="О проге" HorizontalAlignment="Left" Margin="549,302,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="103" Height="46"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="666,345,0,0" VerticalAlignment="Top" Click="Button_Click_2" Height="39" Width="100"/>
+        <Button x:Name="GenerateButton" Content="Сгенерировать" Click="GenerateButton_Click" Margin="201,304,479,109"/>
+        <TextBox x:Name="Ks" Margin="201,254,479,163"/>
+        <TextBlock Text="Введите максимальную сумму K:" Margin="10,255,604,163"/>
+    </Grid>
+</Window>
